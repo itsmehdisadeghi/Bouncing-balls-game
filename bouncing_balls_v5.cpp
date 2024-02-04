@@ -59,7 +59,7 @@ SDL_Color col_orange = {255 , 165 , 0};
 //                         , color(0 = red , 1 = blue , 2 = green , 3 = yellow , 4 = black , 5 = orange)
 //                         , x , y}
 
-void player_list(string username)
+void player_list()
 {
   fstream file("members.txt" , ios::in);
   string line1;
@@ -1963,7 +1963,7 @@ void console_menu()
         }
         case 3:
         {
-            cout << "Player List : " <<endl;
+            player_list();
             break;
         }
         case 4: exit(0);
